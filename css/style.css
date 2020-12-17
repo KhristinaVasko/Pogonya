@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/Open-Sans/OpenSans-Regular.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #aaa;
+  font-family: "Open Sans";
+}
+
+header {
+  background: transparent;
+  max-width: 1777px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-right {
+  margin-top: 10px;
+}
+.header-right__first {
+  display: flex;
+}
+.header-right__first .header-right-icons img {
+  padding: 0 10px;
+}
+.header-right-info {
+  display: flex;
+  margin-left: 20px;
+}
+.header-right-info h4 {
+  padding: 0 15px;
+}
+.header-right-lang {
+  list-style: none;
+  cursor: pointer;
+}
+.header-right-lang .header-right-lang-item {
+  display: inline-block;
+  float: left;
+  padding: 0 10px;
+}
+.header-right .header-phone, .header-right .header-email, .header-right .header-right-lang-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.header-right .header-right-lang-item:hover {
+  color: #DAB045;
+}
+.header-right .home-navigation {
+  list-style: none;
+  display: flex;
+}
+.header-right .home-navigation .home-navigation-item {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 48px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+.header-right .home-navigation .home-navigation-item a {
+  text-decoration: none;
+  color: #fff;
+}
+.header-right .home-navigation .home-navigation-item:hover {
+  border-bottom: 2px solid #DAB045;
+  color: #DAB045;
+}
+.header-right .home-navigation .home-navigation-item:hover a {
+  color: #DAB045;
+}
+
+.header-left {
+  margin-top: 20px;
+}
+.header-left .header-button-online {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 14px 32.4px;
+  border-radius: 200px;
+  line-height: 24px;
+  color: #DAB045;
+  background: transparent;
+  border: none;
+  text-align: center;
+  border: 1px solid #C19332;
+}
+.header-left .donation {
+  text-align: center;
+  color: #FFFFFF;
+  background: linear-gradient(97.64deg, #C19332 7.65%, #DAB045 86.12%);
+  border-radius: 40px;
+  padding: 18px 81.5px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
