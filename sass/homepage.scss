@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #aaa;
+
     font-family: "Open Sans";
 }
 // styles for header
@@ -109,3 +109,68 @@ header{
    }
 }
 //end homapage header
+
+//slider
+
+//end of the slider
+
+//footer(for all pages)
+footer{
+    margin-top: 30px;
+    background-color: #272626;
+    .footer{
+        padding-top: 28px;
+        padding-bottom: 28px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1777px;
+        margin: 0 auto;
+        .footer-links{
+            display: flex; 
+            margin-top: 18px;
+        }
+        .footer-first-link{
+            padding: 0 20px;
+        }
+        .footer-first-link a{
+            text-decoration: none;
+            color: #FFF;
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: uppercase;
+        } 
+        .footer-info{
+            display: flex;
+            margin-top: 18px;
+            .footer-phone, .footer-email{
+                font-weight: normal;
+                font-size: 16px;
+                padding: 0 25px;
+                line-height: 24px;
+                color: #FFFFFF; 
+            }
+            .footer-social-media img{
+                padding: 0 15px;
+                height: 20px;
+            }
+        }
+        .footer-donation{
+            outline: none;
+            background: linear-gradient(97.64deg, #C19332 7.65%, #DAB045 86.12%);
+            border-radius: 40px;
+            border: none;
+            padding: 18px 91px;
+            // margin-top: -10px;
+        }
+        .footer-donation a{
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+           
+        }
+    }
+}
+//end of footer(for all pages)
