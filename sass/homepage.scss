@@ -14,6 +14,10 @@ body{
 }
 // styles for header
 header{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
     background: transparent;
     max-width: 1777px;
     margin: 0 auto;
@@ -111,8 +115,115 @@ header{
 //end homapage header
 
 //slider
-
+.slider-subtitle{
+    padding-top: 310px;
+    padding-left: 76px;
+    font-size: 18px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+    .slider-title{
+        font-weight: 900;
+        max-width: 800px;
+        font-size: 64px;
+        padding-left: 76px;
+        padding-bottom: 300px;
+        line-height: 84px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }  
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+  
+      .gallery-top {
+        height: 90%;
+        width: 100%;
+      }
+  
+      .gallery-thumbs {
+        height: 20%;
+        width: 600px;
+        margin-top: -130px;
+        float: left;
+        margin-left: 60px !important;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+  
+      .gallery-thumbs .swiper-slide {
+        height: 100%;
+        opacity: 0.8;
+      }
+  
+      .gallery-thumbs .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+    
 //end of the slider
+
+//styles for history block 1
+.history{
+    width: 100%;
+    .about-subtitle{
+    display: block;
+    margin: 0 auto;
+    height: 76px;   
+    font-size: 16px;
+    // line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #466B9B;
+    background-image: url(../img/icons/flower.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+    .history-title{
+    font-weight: bold;
+    text-align: center;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+    }
+   
+    .h-content1{
+        background-color: #272626;
+       .h-content1-subtitle{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;  
+       } 
+       .h-content1-subtitle::before{
+        content:url('../img/icons/romb.svg'); 
+     padding: 7px;
+       }
+       .h-content1-title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 50px; 
+        text-transform: uppercase;
+        color: #FFFFFF;  
+       }
+    }
+}
+
+//end styles for history
 
 //footer(for all pages)
 footer{
