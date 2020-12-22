@@ -2,41 +2,7 @@
     width: 100%;
     max-width: 1472px;
     margin: 0 auto;
-    background-image: url(../img/map.png);
-    background-repeat: no-repeat;
-}
-.contacts{
-    max-width: 446px;
-    background-color: #272626;
-    .contacts-container{
-        padding: 60px 54px;
-        .contacts-title{
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 30px;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: #FFFFFF;
-        }
-        hr{
-            width: 54px;
-            border: 1px solid #C19332;
-            float: right;
-            margin-top: 10px;
-        }
-        .contacts-location{
-            display: flex;
-            margin-top: 36px;
-        }
-        .contact-location-text{
-            max-width: 277px;
-            font-style: normal;
-            font-weight: 600;
-            margin-left: 15px;
-            font-size: 16px;
-            line-height: 24px;
-            color: #FFFFFF;
-        }
-    }
-
+    position: relative;
+    display: flex;
+   
 }

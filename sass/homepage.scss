@@ -9,18 +9,17 @@
     box-sizing: border-box;
 }
 body{
-
+    scroll-behavior: smooth;
     font-family: "Open Sans";
 }
 // styles for header
-header{
+.header{
     position: absolute;
     z-index: 100;
     top: 0;
     left: 0;
     background: transparent;
-    max-width: 1777px;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -173,58 +172,373 @@ header{
 //end of the slider
 
 //styles for history block 1
-.history{
-    width: 100%;
-    .about-subtitle{
-    display: block;
-    margin: 0 auto;
-    height: 76px;   
-    font-size: 16px;
-    // line-height: 36px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #466B9B;
-    background-image: url(../img/icons/flower.svg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    }
-    .history-title{
-    font-weight: bold;
-    text-align: center;
+.about{
+ font-weight: 600;
+font-size: 16px;
+background-image: url(../img/icons/flower.svg);
+line-height: 70px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+width: 150px;
+display: block;
+margin: 20px auto;
+text-align: center;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: #466B9B;
+}
+
+.our-history{
+    font-weight: 800;
     font-size: 48px;
+    text-align: center;
+    margin-top: 10px;
     line-height: 64px;
     text-align: center;
     color: #000000;
+}
+.history{
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.history-left{
+    position: relative;
+    .history-img1, .history-img2{
+        position: absolute;
+        // top: 0;
+        // left: 0;
     }
-   
-    .h-content1{
-        background-color: #272626;
-       .h-content1-subtitle{
-        font-weight: normal;
+    .history-img1{
+       top: 70px;
+       left: 100px;
+    }
+    .history-img2{
+        top: 288px;
+        z-index: 30;
+        left: 536px;
+     }
+}
+.history-right{
+    max-width: 1248px;
+    background: #272626;
+    .history-right-container{
+        background-image: url(../img/icons/history-ornament.svg);
+        margin-left: 340px;
+        background-repeat: no-repeat;
+        padding-right: 224px;
+        padding-left: 87px;
+        padding-bottom: 227px;
+        background-position: top left;
+        margin-top: 67px;
+    }
+    .history-subtitle{
+        font-weight: 400;
+        padding-top: 190px;
         font-size: 16px;
         line-height: 24px;
-        color: #FFFFFF;  
-       } 
-       .h-content1-subtitle::before{
-        content:url('../img/icons/romb.svg'); 
-     padding: 7px;
-       }
-       .h-content1-title{
-        font-style: normal;
-        font-weight: bold;
+        color: #FFFFFF;
+    }
+    .history-title{
+        font-weight: 800;
         font-size: 30px;
-        line-height: 50px; 
+        line-height: 50px;
         text-transform: uppercase;
-        color: #FFFFFF;  
-       }
+        color: #FFFFFF;
+    }
+    .history-text1, .history-text2{
+        font-size: 14px;
+        line-height: 24px;
+        color: #E9E9E9;
+        padding-top: 40px;
+        max-width: 630px;
     }
 }
-
 //end styles for history
+.icons-part{
+    display: flex;
+    margin-top: 112px;
+    justify-content: space-between;
+}
+.icons-part-left{
+    max-width: 1248px;
+    background: #272626;
+}
+//icons style
+.icons{
+    position: relative;
+}
+.icons-part-left-container{
+    margin-left: 226px;
+    margin-right: 390px;
+    margin-top: 67px;
+    padding-top: 205px;
+    padding-bottom: 274px;
+    padding-left: 81px;
+    background-image: url(../img/icons/history-ornament.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+.icon-left-subtitle{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.icon-left-title{
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+}
+.icons-left-text1, .icons-left-text2{
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 24px;
+    max-width: 632px;
+    color: #E9E9E9;
+}
+.icons-part-right{
+    position: relative;
+}
+.icons-right-img1, .icons-right-img2{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.icons-right-img1{
+    z-index: 30;
+    right: 524px;
+    top: 229px;
+}
+.icons-right-img2{
+    right: 81px;
+    top: 60px;
+}
+//end of icons style
 
+// schedule styles
+.schedule-part{
+    margin-top: 20px;
+    .schedule-part-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        max-width: 1475px;
+        margin: 160px auto;
+        .schedule-part-right{
+            display: flex;
+           .schedule-right-title{
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 36px; 
+            text-transform: uppercase;  
+            color: #000000; 
+           } 
+           .sch-ps{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 18px;
+            margin-top: 36px;
+            color: #4F4F4F; 
+           }
+           .schedule-part-right-item:first-child{
+               padding: 40px 118px 187px 36px;
+               border: 1px solid #E0E0E0;
+           }
+           .schedule-part-right-item:nth-child(2){
+            padding: 40px 118px 94px 36px;
+            border: 1px solid #E0E0E0;
+           }
+           .schedule-part-right-item:nth-child(3){
+            padding: 40px 73px 40px 36px;
+            border: 1px solid #E0E0E0;
+           }
+          .schedule-list-item{
+              display: flex;
+              margin-top: 38px;
+              img{
+                  padding-right: 15px;
+              }
+              .sch-list-time{
+                padding-right: 18px;
+                font-weight: 800;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+              }
+              .sch-list-descr{
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color: #4F4F4F;
+              }
+          }
+           .sch-right-line{
+            width: 54px;
+            margin-top: 19px;
+            border: 1px solid #C19332; 
+           }
+        }
+        .schedule-title{
+        font-weight: bold;
+        font-size: 48px;
+        max-width: 333px;
+        line-height: 64px;
+        color: #000000;
+        }
+        .schedule-line{
+        width: 54px;
+        margin-top: 40px;
+        border: 1px solid #C19332;
+        }
+        .schedule-left-text{
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 24px;
+            color: #4F4F4F; 
+            text-align: start;
+            max-width: 314px;
+            margin-top: 32px;
+        }
+    }
+}
+//end of shedule styles
+//parallax block
+.news-parallax{
+    background-image: url(../img/parlx-bg.png);
+    min-height: 700px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  .news-subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    padding-top: 400px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;  
+    text-align: center;
+  }  
+  .news-title{
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;  
+  }
+}
+//end of parallax block
+//pray
+#pray-about{
+    font-weight: 600;
+    font-size: 16px;
+    background-image: url(../img/icons/flower.svg);
+    line-height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 190px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #466B9B; 
+}
+.pray-title{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #333333;
+}
+.vertical-line{
+    display: block;
+    margin: 20px auto;
+}
+.prays-container{
+    width: 100%;
+    max-width: 1174px;
+    margin: 0 auto;
+    .pray-line{
+        opacity: 0.3;
+        border: 1px solid #B0C9EC;   
+    }
+}
+// end pray block
+//svidchenya
+.svidchenya{
+    margin-top: 30px;
+    
+    #people-stories {
+    font-weight: 600;
+    font-size: 16px;
+    background-image: url(../img/icons/flower.svg);
+    line-height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 201px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #466B9B; 
+    }
+    .svidchenya-title{
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        color: #333333;  
+        text-align: center;
+    }
+    .svidchenya-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 64px;
+        justify-content: center;
+        align-items: center;
+    }
+    .svidchenya-container-item{
+        width: 420px;
+        margin: 20px 60px;
+    }
+    .svidchenya-item-title span{
+        padding: 5px;
+    }
+    .svidchenya-item-text{
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 16px;
+        color: #4F4F4F;   
+    }
+    .svidchenya-item-button{
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 48px;
+        background: transparent;
+        border: none;
+        padding: 0 70px;
+        display: block;
+        float: right;
+        margin-top: 48px;
+        border: 1px solid #DBA059;
+        color: #DBA059; 
+        border-radius: 40px;
+    }
+}
+//end of svidchenya
 //footer(for all pages)
 footer{
     margin-top: 30px;
