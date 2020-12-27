@@ -1,0 +1,90 @@
+.map-container {
+  width: 100%;
+  max-width: 1541px;
+  margin: 40px auto;
+  background-image: url(../img/map.png);
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat; }
+  .map-container .mapcontent-text {
+    max-width: 446px;
+    background-color: #272626;
+    padding-right: 57px; }
+  .map-container .map-contact {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 40px;
+    padding-left: 54px;
+    font-weight: normal; }
+  .map-container .map-content-line {
+    width: 54px;
+    border: 1px solid #C19332;
+    float: right; }
+  .map-container .map-content-location {
+    display: flex;
+    padding-left: 54px;
+    padding-top: 48px; }
+  .map-container .map-content-location:last-child {
+    padding-bottom: 158px; }
+
+.bus-schedule {
+  margin-top: 40px; }
+  .bus-schedule .bus-schedule-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1474px;
+    margin: 0 auto; }
+    .bus-schedule .bus-schedule-container .bus-schedule-left {
+      margin-right: 133px; }
+    .bus-schedule .bus-schedule-container .bus-schedule-left-title {
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 64px;
+      color: #000000;
+      max-width: 333px; }
+    .bus-schedule .bus-schedule-container .bus-schedule-right-items:first-child {
+      padding: 40px 104px 39px 36px;
+      border: 1px solid #E0E0E0; }
+    .bus-schedule .bus-schedule-container .bus-schedule-right-items:nth-child(2) {
+      padding: 40px 168px 86px 36px;
+      border: 1px solid #E0E0E0; }
+    .bus-schedule .bus-schedule-container .bus-schedule-right-items:nth-child(3) {
+      padding: 40px 147px 86px 36px;
+      border: 1px solid #E0E0E0; }
+    .bus-schedule .bus-schedule-container .bus-schedule-right-items:nth-child(4) {
+      padding: 40px 122px 40px 36px;
+      border: 1px solid #E0E0E0; }
+    .bus-schedule .bus-schedule-container .bus-schedule-hr {
+      width: 54px;
+      border: 1px solid #C19332;
+      margin-top: 40px; }
+    .bus-schedule .bus-schedule-container .bus-schedule-left-text {
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 24px;
+      color: #4F4F4F;
+      max-width: 314px;
+      margin-top: 32px; }
+    .bus-schedule .bus-schedule-container .bus-right-item-time {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000000;
+      padding-right: 28px; }
+    .bus-schedule .bus-schedule-container .bus-schedule-right {
+      display: flex;
+      flex-wrap: wrap; }
+    .bus-schedule .bus-schedule-container .bus-right-title {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 36px;
+      text-transform: uppercase;
+      color: #000000; }
+    .bus-schedule .bus-schedule-container .bus-right-item {
+      display: flex;
+      margin-top: 22px; }
+    .bus-schedule .bus-schedule-container .bus-right-item-img {
+      padding: 0 15px; }

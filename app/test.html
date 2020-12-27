@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>test</title>
+    <style>
+     .container{
+         width: 100%;
+         max-width: 1270px;
+         margin: 0 auto;
+     }
+     .tabs__items{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+     .tabs-item{
+         padding: 0 30px;
+     }
+     .tabs-item {
+        text-decoration: none;
+        color: #000;
+     }
+     .tabs-block{
+         display: none;
+     }
+     .tabs-block:target{
+         display: block;
+     }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+        <nav class="tabs__items">
+            <a href="#tab1" class="tabs-item">Статті</a>
+            <a href="#tab2" class="tabs-item">Фотогалерея</a>
+            <a href="#tab3" class="tabs-item">Відео</a>
+        </nav>
+        <div class="tabs__body">
+            <div class="tabs-block" id="tab1">
+                first Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, architecto.
+            </div>
+            <div class="tabs-block" id="tab2">
+
+                second Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, architecto.
+            </div>
+            <div class="tabs-block" id="tab3">
+
+                third Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, architecto.
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
