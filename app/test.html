@@ -5,54 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>test</title>
-    <style>
-     .container{
-         width: 100%;
-         max-width: 1270px;
-         margin: 0 auto;
-     }
-     .tabs__items{
-         display: flex;
-         align-items: center;
-         justify-content: center;
-     }
-     .tabs-item{
-         padding: 0 30px;
-     }
-     .tabs-item {
-        text-decoration: none;
-        color: #000;
-     }
-     .tabs-block{
-         display: none;
-     }
-     .tabs-block:target{
-         display: block;
-     }
-    </style>
+<style>
+    .button-item{
+        width: 400px;
+        background-color: #ccc;
+        z-index: 30;        height: 100px;
+    }
+    .content{
+        height: 0px;
+        background-color: aquamarine;
+        width: 300px;
+    }
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="tabs">
-        <nav class="tabs__items">
-            <a href="#tab1" class="tabs-item">Статті</a>
-            <a href="#tab2" class="tabs-item">Фотогалерея</a>
-            <a href="#tab3" class="tabs-item">Відео</a>
-        </nav>
-        <div class="tabs__body">
-            <div class="tabs-block" id="tab1">
-                first Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, architecto.
-            </div>
-            <div class="tabs-block" id="tab2">
 
-                second Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, architecto.
-            </div>
-            <div class="tabs-block" id="tab3">
-
-                third Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, architecto.
-            </div>
+<div class="container">
+    <div class="buttons">
+        <div class="button-item">button1</div>
+        <div class="content">
+            <p>vdvd</p>
         </div>
+        <div class="button-item">button2</div>
+        <div class="content"><p>vdvd</p></div>
+        <div class="button-item">button3</div>
+        <div class="content"><p>vdvd</p></div>
     </div>
-  </div>
+</div>
 </body>
 </html>

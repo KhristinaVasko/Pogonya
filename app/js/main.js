@@ -1,10 +1,19 @@
+function opentab1(tabName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(tabName).style.display = "block";  
+}
+
 var galleryThumbs = new Swiper('.gallery-thumbs', {
     spaceBetween: 1,
     slidesPerView: 5,
     loop: true,
     freeMode: true,
     loop: true,
-  loopedSlides: 5, //looped slides should be the same
+    loopedSlides: 5, 
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
   });
@@ -48,3 +57,36 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
    }
 
 }
+
+//tabs navigation 1
+$(function() {
+  $(".tab1-btns-item").on("click", function(e) {
+      $(this).addClass("active1").siblings().removeClass("active1");    
+  });
+})
+//tabs content 1
+function opentab1(tabName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(tabName).style.display = "block";  
+}
+// homepage burger menu
+// function closeNav1() {
+//   document.getElementById("myNav").style.width = "0%";
+//   document.getElementById("burg-icon").style.display = "block";
+//   document.getElementById("burg-close").style.display = "none";
+// }
+
+
+//prays content
+// $(document).ready(function(){
+//   $(".pray-name").click(function(){
+//     $(".pray-content-text").slideToggle();
+//   });
+//   $(".pray-name2").click(function(){
+//     $(".pray2-content").slideToggle("slow");
+//   });
+// });

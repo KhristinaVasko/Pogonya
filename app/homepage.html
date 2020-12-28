@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="libs/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Головна</title>
@@ -11,6 +12,8 @@
 <body >
     <!-- header -->
         <header class="header">
+           <img src="img/icons/burger-white.svg" alt="" class="home-burger">
+           <div href="javascript:void(0)" class="closebtn" id="burg-close" onclick="closeNav1()">&times;</div>
             <div class="header-right">
                 <div class="header-right__first">
                     <div class="header-right-icons">
@@ -48,6 +51,8 @@
                 <button class="donation">Пожертва</button>
             </div>
         </header>
+
+       
     <!-- end of the header --> 
 <div class="main-container">
         <div class="swiper-container gallery-top">
@@ -78,7 +83,7 @@
             </div>
           </div>
    </div>         
- </div>
+ </div> 
 
 
     <div class="about">Про Погоню</div>
@@ -206,13 +211,159 @@
       <h4 class="news-title">Новини</h4>
   </div>
   <!-- end of parallax block -->
+<!-- tabs -->
+<div class="tab1-container">
+    <div class="tab1-btns">
+        <div  class="tab1-btns-item active1" onclick="opentab1('aricles')">
+            <img src="img/icons/tab-ornament.svg" alt="" class="tab-btn-before">
+            Статті
+            <img src="img/icons/tab1-line.svg" alt="" class="tab-btn-after">
+        </div>
+        <div  class="tab1-btns-item" onclick="opentab1('gallery')">
+            <img src="img/icons/tab-ornament.svg" alt="" class="tab-btn-gal-before">
+            Фотогалерея
+            <img src="img/icons/tab1-line.svg" alt="" class="tab-btn-gal-after">
+        </div>
+        <div  class="tab1-btns-item" onclick="opentab1('video')">  
+            <img src="img/icons/tab-ornament.svg" alt="" class="tab-btn-vid-before">
+            Відео
+            <!-- <img src="img/icons/tab1-line.svg" alt="" > -->
+            <img src="img/icons/tab1-line.svg" alt="" class="vid-line">
+        </div>
+      </div>
+      
+      <div id="aricles" class="city">
+        <div class="articles-tab-container">
+            <div class="articles-tab-item">
+                <img src="img/tab1-1.png" alt="" class="tab1-img">
+                <h4 class="tab1-title">В Івано-Франківську відкрили музей єпископа</h4>
+                <p class="tab1-subtitle-item">12 грудня 2020</p>
+            </div>
+            <div class="articles-tab-item">
+                <img src="img/tab1-2.png" alt="" class="tab1-img">
+                <h4 class="tab1-title">В Івано-Франківську відкрили музей єпископа</h4>
+                <p class="tab1-subtitle-item">12 грудня 2020</p>
+            </div>
+            <div class="articles-tab-item">
+                <img src="img/tab1-3.png" alt="" class="tab1-img">
+                <h4 class="tab1-title">В Івано-Франківську відкрили музей єпископа</h4>
+                <p class="tab1-subtitle-item">12 грудня 2020</p>
+            </div>
+            <div class="articles-tab-item">
+                <img src="img/tab1-4.png" alt="" class="tab1-img">
+                <h4 class="tab1-title">В Івано-Франківську відкрили музей єпископа</h4>
+                <p class="tab1-subtitle-item">12 грудня 2020</p>
+            </div>
+            <div class="articles-tab-item">
+                <img src="img/tab1-5.png" alt="" class="tab1-img">
+                <h4 class="tab1-title">В Івано-Франківську відкрили музей єпископа</h4>
+                <p class="tab1-subtitle-item">12 грудня 2020</p>
+            </div>
+        </div>
+       
+      </div>
+      
+      <div id="gallery" class="city" style="display:none">
+        <div class="gallery-tab-container">
+            <div class="gallery-tab-item">
+                <img src="img/tab1-1.png" alt="" class="tab1-img">
+               
+            </div>
+            <div class="gallery-tab-item">
+                <img src="img/tab1-2.png" alt="" class="tab1-img">
+               
+            </div>
+            <div class="gallery-tab-item">
+                <img src="img/tab1-3.png" alt="" class="tab1-img">
+              
+            </div>
+            <div class="gallery-tab-item">
+                <img src="img/tab1-4.png" alt="" class="tab1-img">
+               
+            </div>
+            <div class="gallery-tab-item">
+                <img src="img/tab1-5.png" alt="" class="tab1-img">
+                
+            </div>
+        </div>
+      
+      </div>
+      
+      <div id="video" class="city" style="display:none">
+        <div class="video-tab-container">
+            <div class="video-tab-item">
+                <img src="img/tab1-1.png" alt="" class="tab1-img">
+                <p>video</p>
+            
+               
+            </div>
+            <div class="video-tab-item">
+                <img src="img/tab1-2.png" alt="" class="tab1-img">
+                <p>video</p>
+               
+            </div>
+            <div class="video-tab-item">
+                <img src="img/tab1-3.png" alt="" class="tab1-img">
+                <p>video</p>
+              
+            </div>
+            <div class="video-tab-item">
+                <img src="img/tab1-4.png" alt="" class="tab1-img">
+                <p>video</p>
+               
+            </div>
+            <div class="video-tab-item">
+                <img src="img/tab1-5.png" alt="" class="tab1-img">
+                <p>video</p>
+                
+            </div>
+        </div>
+        
+      </div>
+  </div>
+  <img src="img/icons/side-ornament.svg" alt="" class="tabs-side-ornament">
+  <hr class="tabs-hr">
+<!-- end of tabs -->
   <!-- Prays -->
   <div class="about" id="pray-about">Описовий текст</div>
   <h4 class="pray-title">Молитви</h4>
   <img src="img/icons/vertical-line.svg" alt="" class="vertical-line">
  
-  <div class="prays-container">
+  <!-- <div class="prays-container">
        <hr class="pray-line">
+
+
+    <div class="pray-name">
+        <div class="pray-name-right">
+        <span class="plus-icon">+</span>
+        <h4 class="pray-name-title">Акафіст до Богородиці Погінської</h4>
+        </div>
+        <img src="img/icons/ornament-right.svg" alt="" class="pray-ornament">
+    </div>
+<div class="pray-content">
+<div class="pray-content-text">
+   <p class="pray-content-pray1">  Царице Покутського краю, прославлена небесними силами і возвеличена людськими родами Мати Ісуса Христа і наша Мати.</p>
+   <p class="pray-content-pray2"> З серцем, повним пошани, припадаю до Тебе, Преблагословенна і Пречиста Діво Маріє, прошу Тебе: вислухай мене нині.</p>
+   <p class="pray-content-pray3">  Прекрасна квітко душевного раю, знаю, що багатьма думками не раз тяжко зневажав доброту Божу, тому прошу Тебе, відкрий мої очі, засліплені марнотами цього світу, а за провини усі - пробач.</p>
+   <p class="pray-content-pray4">  Подай Свою ласкаву материнську руку у теперішній потребі і наповни моє серце силою любові, щоб я не захитався у вірі.
+    Не випускай мене зі Своєї святої опіки і охороняй мене, щоб я ніколи не зійшов з чесної дороги.</p>
+   <p class="pray-content-pray5"> Матінко Божа, прийми ласкаво в Свою опіку мою родину, яку Тобі поручаю.</p>
+   <p class="pray-content-pray6"> Покрий нас Своїм омофором, аби ми всі перебували в здоров'ї і спокої та славили Тебе на віки вічні. Амінь.</p>
+   <img src="img/icon-full.png" alt="" class="icon-pray">
+</div>
+</div>
+
+<div class="pray-name2">
+    <div class="pray-name2-right">
+        
+    </div>
+</div>
+ -->
+
+
+
+
+
   </div>
   <!-- end prays -->
 
@@ -225,6 +376,7 @@
               <h4 class="svidchenya-item-title"><span><img src="img/icons/romb.svg" alt=""></span>Назва історії</h4>
               <p class="svidchenya-item-text">Тут буде розміщуватися 3 рядки тексту з історії. Тут буде розміщуватися 3 рядки тексту з історії. Тут буде розміщуватися 3 рядки тексту з історії...</p>
               
+              <img src="" alt="">
               <button class="svidchenya-item-button">Читати</button>
               
           </div>
@@ -259,7 +411,7 @@
   
 
       <!-- footer for all pages -->
-      <footer>
+      <!-- <footer>
         <div class="footer">
             <div class="footer-links">
                 <p class="footer-first-link"><a href="#">Видання</a></p>
@@ -278,9 +430,10 @@
                 <button class="footer-donation"><a href="#">Пожертва</a></button>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- end footer for all pages -->
     <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
 </body>
 </html>

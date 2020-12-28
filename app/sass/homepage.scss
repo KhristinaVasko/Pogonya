@@ -43,7 +43,7 @@ body{
        cursor: pointer;
        .header-right-lang-item{
         display: inline-block;
-        float: left;
+        // float: left;
         padding:0 10px;
     }
    } 
@@ -435,7 +435,165 @@ color: #466B9B;
     color: #FFFFFF;  
   }
 }
+.tab-btn-before{
+    opacity: 0;
+    position: absolute;
+    top: -38px;
+    left: 20px;
+}
+.tab-btn-after{
+    position: absolute;
+    top: 30px;
+    opacity: 0;
+    left: 34px;  
+}
 //end of parallax block
+//tabs
+.tab1-container{
+    margin-bottom: 60px;
+}
+.active1{
+    color: #000 !important;
+}
+.active1 .tab-btn-before{
+    opacity: 1;
+}
+.active1 .tab-btn-after{
+    opacity: 1;
+}
+.tab-btn-gal-before{
+    position: absolute;
+    opacity: 0;
+    top: -37px;
+    left: 60px;
+}
+
+.tab-btn-vid-before{
+    position: absolute;
+    top: -38px;
+    left: 13px;
+    opacity: 0;
+}
+.vid-line{
+    margin-left: 3px;
+    position: absolute;
+    top: 41px;
+    opacity: 0;
+    left: 24px;
+}
+
+.active1 .vid-line{
+    opacity: 1;
+}
+.active1 .tab-btn-vid-before{
+    opacity: 1;
+}
+
+
+.tab-btn-gal-after{
+    position: absolute;
+    top: 28px;
+    opacity: 0;
+    left: 73px;
+}
+.active1 .tab-btn-gal-after{
+    opacity: 1;
+}
+.active1 .tab-btn-gal-before{
+    opacity: 1;
+}
+
+
+
+.tab1-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+}
+.tab1-btns div{
+    position: relative;
+    margin: 0 100px;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #627C9F;
+    background: transparent;
+    border: none;
+}
+.tab1-btns-item{
+    position: relative;
+    
+}
+.tab1-top{
+   position: absolute;
+   top: -30px;
+  
+   left: 18px;
+}
+.tab1-bottom{
+    position: absolute;
+    top: 24px;
+  
+    left: 33px;
+}
+.active1{
+    color: #000;
+}
+
+.articles-tab-container, .gallery-tab-container, .video-tab-container{
+    display: flex;
+    margin-top: 114px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.articles-tab-item, .video-tab-item, .gallery-tab-item{
+    padding: 0 10px;
+}
+
+
+.tab1-title{
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+margin-top: 36px;
+color: #000000;
+max-width: 300px
+}
+.tab1-subtitle-item{
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+color: #627C9F;
+margin-top: 44px;
+}
+
+
+.tabs-side-ornament{
+    margin-left: 40px;
+}
+.tabs-hr{
+    width: 100%;
+    display: inline-block;
+    border: 0.5px solid #C19332;
+    max-width: 1321px;
+}
+.tab1-showall{
+    border: none;
+    padding: 6px 60px;
+    background: transparent;
+    border: 1px solid #DAB045;
+    border-radius: 40px;
+    line-height: 48px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 
+    color: #DBA059;
+}
+//end of tabs
 //pray
 #pray-about{
     font-weight: 600;
@@ -471,6 +629,78 @@ color: #466B9B;
     .pray-line{
         opacity: 0.3;
         border: 1px solid #B0C9EC;   
+    }
+}
+.pray-content-text:first-child{
+    display:block;
+}
+.icon-pray, .icon-pray2{
+    position: absolute;
+    top: 40px;
+    left: -156px;
+    width: 319px;
+}
+.plus-icon{
+    font-size: 40px;
+}
+.pray-name-title{
+font-weight: bold;
+font-size: 20px;
+margin-left: 33px;
+line-height: 60px;
+color: #4F4F4F;
+}
+.pray-content-text, .pray2-content-text{
+    width: 90%;
+    position: relative;
+float: right;
+margin-left: 200px;
+padding: 54px 54px 54px 193px;
+background: #627c9f3a;
+ p{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: #616770;
+    margin-top: 30px;
+ }
+}
+.pray-content{
+    display: flex; 
+    margin-bottom: 15px;
+}
+.pray-name, .pray-name2{
+    display: flex;
+    padding: 24px 0px;
+    justify-content: space-between;
+}
+.pray-name-right{
+    display: flex;
+}
+.pray-img{
+    width: 100%;
+    max-width:319.15px; 
+    top:0;
+    left: 0s;
+    z-index: 10;
+    margin-left: 61px;
+    margin-top: 40px;
+}
+.pray2-content{
+    display: none;
+}
+.pray-name2-right{
+    display: flex;
+    .pray-name2-plus{
+        font-size: 40px;
+        color:#DAB045;
+    }
+    .pray-name2-title{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 60px;
+        margin-left: 33px;
+        color: #4F4F4F;
     }
 }
 // end pray block

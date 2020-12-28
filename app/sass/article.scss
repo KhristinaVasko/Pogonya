@@ -7,9 +7,10 @@ header{
 }
 .overlay {
 width: 0;
-position: fixed;
+position: absolute;
 z-index: 100;
 overflow-x: hidden;
+height: 100vh;
 transition: 0.5s;
 background-color: #fff; }
     .main-header-right{

@@ -1,42 +1,42 @@
 
-.map-container{
-    width: 100%;
-    max-width: 1541px;
-    margin: 40px auto;
-    background-image: url(../img/map.png);
-    background-size: contain;
-    background-position: top right;
-    background-repeat: no-repeat;
-    .mapcontent-text{
-        max-width: 446px;
-        background-color: #272626;
-        padding-right: 57px;
-    }
-    .map-contact{
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        padding-top: 40px;
-        padding-left: 54px;
-        font-weight: normal; 
-    }
-    .map-content-line{
-        width: 54px;
-         border: 1px solid #C19332;
-         float: right;
-          }
-          .map-content-location{
-            display: flex;
-            padding-left: 54px;
-            padding-top: 48px;
-              }
-              .map-content-location:last-child{
-                  padding-bottom: 158px;
-              }
+// .map-container{
+//     width: 100%;
+//     max-width: 1541px;
+//     margin: 40px auto;
+//     background-image: url(../img/map.png);
+//     background-size: contain;
+//     background-position: top right;
+//     background-repeat: no-repeat;
+//     .mapcontent-text{
+//         max-width: 446px;
+//         background-color: #272626;
+//         padding-right: 57px;
+//     }
+//     .map-contact{
+//         font-size: 16px;
+//         line-height: 30px;
+//         letter-spacing: 0.2em;
+//         text-transform: uppercase;
+//         color: #FFFFFF;
+//         padding-top: 40px;
+//         padding-left: 54px;
+//         font-weight: normal; 
+//     }
+//     .map-content-line{
+//         width: 54px;
+//          border: 1px solid #C19332;
+//          float: right;
+//           }
+//           .map-content-location{
+//             display: flex;
+//             padding-left: 54px;
+//             padding-top: 48px;
+//               }
+//               .map-content-location:last-child{
+//                   padding-bottom: 158px;
+//               }
     
-}
+// }
 
 
 .bus-schedule{
