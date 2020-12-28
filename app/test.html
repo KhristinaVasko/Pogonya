@@ -4,33 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="libs/jquery/dist/jquery.min.js"></script>
     <title>test</title>
 <style>
-    .button-item{
-        width: 400px;
-        background-color: #ccc;
-        z-index: 30;        height: 100px;
-    }
-    .content{
-        height: 0px;
-        background-color: aquamarine;
-        width: 300px;
-    }
+   
 </style>
 </head>
 <body>
-
-<div class="container">
-    <div class="buttons">
-        <div class="button-item">button1</div>
-        <div class="content">
-            <p>vdvd</p>
+    <div id="dropdown-1" class="dropdown dropdown-processed">
+        <div class="dropdown-link">
+            <p class="option-plus">+</p>
+            <h4 class="option-name">Акафіст до Богородиці Погінської</h4>
+            <img src="img/icons/side-ornament.svg" alt="">
         </div>
-        <div class="button-item">button2</div>
-        <div class="content"><p>vdvd</p></div>
-        <div class="button-item">button3</div>
-        <div class="content"><p>vdvd</p></div>
-    </div>
-</div>
+        <div class="dropdown-container" >
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div id="dropdown-2" class="dropdown dropdown-processed">
+        <div class="dropdown-link" >Options</div>
+        <div class="dropdown-container" style="display: none;">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div id="dropdown-3" class="dropdown dropdown-processed">
+        <div class="dropdown-link" >Options</div>
+        <div class="dropdown-container" style="display: none;">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="dropdown-4" class="dropdown dropdown-processed">
+        <div class="dropdown-link" >Options</div>
+        <div class="dropdown-container" style="display: none;">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="dropdown-5" class="dropdown dropdown-processed">
+        <div class="dropdown-link" >Options</div>
+        <div class="dropdown-container" style="display: none;">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="dropdown-6" class="dropdown dropdown-processed">
+        <div class="dropdown-link" >Options</div>
+        <div class="dropdown-container" style="display: none;">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+      </div>
+
+      <script>
+          $(document).ready(function(){
+
+$('div.dropdown').each(function() {
+  var $dropdown = $(this);
+
+  $("div.dropdown-link", $dropdown).click(function(e) {
+    e.preventDefault();
+    $div = $("div.dropdown-container", $dropdown);
+    $div.toggle();
+    $("div.dropdown-container").not($div).hide();
+    return false;
+  });
+}); 
+$('html').click(function(){
+  $("div.dropdown-container").hide();
+}); 
+});
+      </script>
 </body>
 </html>

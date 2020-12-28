@@ -589,8 +589,7 @@ margin-top: 44px;
     border-radius: 40px;
     line-height: 48px;
     font-weight: bold;
-    font-size: 15px;
-    margin-left: 
+    font-size: 15px; 
     color: #DBA059;
 }
 //end of tabs
@@ -631,78 +630,45 @@ margin-top: 44px;
         border: 1px solid #B0C9EC;   
     }
 }
-.pray-content-text:first-child{
-    display:block;
-}
-.icon-pray, .icon-pray2{
-    position: absolute;
-    top: 40px;
-    left: -156px;
-    width: 319px;
-}
-.plus-icon{
-    font-size: 40px;
-}
-.pray-name-title{
-font-weight: bold;
-font-size: 20px;
-margin-left: 33px;
-line-height: 60px;
-color: #4F4F4F;
-}
-.pray-content-text, .pray2-content-text{
-    width: 90%;
-    position: relative;
-float: right;
-margin-left: 200px;
-padding: 54px 54px 54px 193px;
-background: #627c9f3a;
- p{
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 24px;
-    color: #616770;
-    margin-top: 30px;
- }
-}
-.pray-content{
-    display: flex; 
-    margin-bottom: 15px;
-}
-.pray-name, .pray-name2{
+.dropdown-link{
     display: flex;
-    padding: 24px 0px;
     justify-content: space-between;
 }
-.pray-name-right{
+.dropdown-link-right{
     display: flex;
+   .option-plus{
+       font-size: 40px;
+       color: #DBA059;
+       font-weight: 800;
+   } 
+   .option-name{
+       line-height: 60px;
+       margin-left: 30px;
+   }
 }
-.pray-img{
-    width: 100%;
-    max-width:319.15px; 
-    top:0;
-    left: 0s;
-    z-index: 10;
-    margin-left: 61px;
-    margin-top: 40px;
-}
-.pray2-content{
-    display: none;
-}
-.pray-name2-right{
+
+.dropdown-container{
     display: flex;
-    .pray-name2-plus{
-        font-size: 40px;
-        color:#DAB045;
+    position: relative;
+    .dropdown-img{
+        width: 319px;
+        top: 40px;
+        left: 127px;
+        position: absolute;
     }
-    .pray-name2-title{
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 60px;
-        margin-left: 33px;
-        color: #4F4F4F;
+    .dropdown-pray-container{
+        background: #627c9f23;
+        width: 90%;
+        margin-left: 300px;
+    }
+    .dropdown-text{
+        padding: 54px 54px 54px 193px;
+        .dropdown-text-item{
+            padding-top: 30px;
+        }
     }
 }
+
 // end pray block
 //svidchenya
 .svidchenya{

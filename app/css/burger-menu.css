@@ -58,6 +58,9 @@
 @media (max-width: 1570px) {
   .header-right {
     display: none; }
+  .home-burger {
+    display: block;
+    margin-left: 30px; }
   #imgplus-home {
     display: block;
     margin-left: 40px;

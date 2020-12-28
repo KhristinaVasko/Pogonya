@@ -74,12 +74,6 @@ function opentab1(tabName) {
   document.getElementById(tabName).style.display = "block";  
 }
 // homepage burger menu
-// function closeNav1() {
-//   document.getElementById("myNav").style.width = "0%";
-//   document.getElementById("burg-icon").style.display = "block";
-//   document.getElementById("burg-close").style.display = "none";
-// }
-
 
 //prays content
 // $(document).ready(function(){
@@ -90,3 +84,22 @@ function opentab1(tabName) {
 //     $(".pray2-content").slideToggle("slow");
 //   });
 // });
+
+//dropdown молитви
+$(document).ready(function(){
+
+  $('div.dropdown').each(function() {
+    var $dropdown = $(this);
+  
+    $("div.dropdown-link", $dropdown).click(function(e) {
+      e.preventDefault();
+      $div = $("div.dropdown-container", $dropdown);
+      $div.toggle();
+      $("div.dropdown-container").not($div).hide();
+      return false;
+    });
+  }); 
+  $('html').click(function(){
+    $("div.dropdown-container").hide();
+  }); 
+  });

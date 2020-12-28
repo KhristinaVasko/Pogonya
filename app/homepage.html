@@ -12,8 +12,8 @@
 <body >
     <!-- header -->
         <header class="header">
-           <img src="img/icons/burger-white.svg" alt="" class="home-burger">
-           <div href="javascript:void(0)" class="closebtn" id="burg-close" onclick="closeNav1()">&times;</div>
+           <img src="img/icons/burger-white.svg" alt="" class="home-burger"  onclick="openNav()">
+           <div href="javascript:void(0)" class="closebtn" id="burg-close" onclick="closeNav()">&times;</div>
             <div class="header-right">
                 <div class="header-right__first">
                     <div class="header-right-icons">
@@ -51,7 +51,31 @@
                 <button class="donation">Пожертва</button>
             </div>
         </header>
-
+        <div id="myNav" class="overlay">
+            <ul class="overlay-navigation">
+                <li class="overlay-navigation-item"><a href="#">Головна</a></li>
+                <li class="overlay-navigation-item"><a href="#">Про Погоню</a></li>
+                <li class="overlay-navigation-item"><a href="#">Про Отців</a></li>
+                <li class="overlay-navigation-item"><a href="#">Розклад Богослужінь</a></li>
+                <li class="overlay-navigation-item"><a href="#">Новини</a></li>
+                <li class="overlay-navigation-item"><a href="#">Молитви</a></li>
+                <li class="overlay-navigation-item"><a href="#">Свідчення</a></li>
+                <li class="overlay-navigation-item"><a href="#">Видання</a></li>
+                <li class="overlay-navigation-item"><a href="#">Контакти</a></li>
+            </ul>
+         
+            <p class="overlay-tel">+38 096 313 34 54</p>
+            <p class="overlay-email">pogonia@gmail.com</p>
+            <ul class="ovarlay-lang">
+                <li class="overlay-lang-item">UA</li>
+                <li class="overlay-lang-item">Eng</li>
+            </ul>
+            <div class="overlay-icons">
+                 <img src="img/icons/facebook-black.svg" alt="">
+                 <img src="img/icons/instagram-black.svg" alt="">
+                 <img src="img/icons/youtube-black.svg" alt="">
+            </div>
+           </div>
        
     <!-- end of the header --> 
 <div class="main-container">
@@ -89,7 +113,7 @@
     <div class="about">Про Погоню</div>
     <h4 class="our-history">Наша історія</h4>
     <!-- block 2  -->
-   <div class="history">
+   <!-- <div class="history">
        <div class="history-left">
         <img src="img/church-outside.png" alt="" class="history-img1">
         <img src="img/church-inside.png" alt="" class="history-img2">
@@ -102,12 +126,12 @@
         <p class="history-text2">Ut placerat eros ut lectus sollicitudin hendrerit. Donec at neque euismod, dapibus lectus vel, commodo dolor. Duis elit tortor, volutpat vitae odio eget, luctus dignissim diam. Sed lacinia scelerisque mi, ac cursus purus mattis in. Vestibulum ac lorem convallis, maximus dui vel, convallis mauris.</p>
         </div>
     </div>
-   </div>
+   </div> -->
 
     <!-- end of block 2 -->
    
     <!-- block 3 -->
-  <div class="block3-container">
+  <!-- <div class="block3-container">
       <div class="icons-part">
           <div class="icons-part-left">
               <div class="icons-part-left-container">
@@ -204,15 +228,15 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
     <!-- end of block 4 -->
-  <div class="news-parallax">
+  <!-- <div class="news-parallax">
       <p class="news-subtitle">Описовий текст</p>
       <h4 class="news-title">Новини</h4>
-  </div>
+  </div> -->
   <!-- end of parallax block -->
 <!-- tabs -->
-<div class="tab1-container">
+<!-- <div class="tab1-container">
     <div class="tab1-btns">
         <div  class="tab1-btns-item active1" onclick="opentab1('aricles')">
             <img src="img/icons/tab-ornament.svg" alt="" class="tab-btn-before">
@@ -227,7 +251,7 @@
         <div  class="tab1-btns-item" onclick="opentab1('video')">  
             <img src="img/icons/tab-ornament.svg" alt="" class="tab-btn-vid-before">
             Відео
-            <!-- <img src="img/icons/tab1-line.svg" alt="" > -->
+            
             <img src="img/icons/tab1-line.svg" alt="" class="vid-line">
         </div>
       </div>
@@ -322,53 +346,184 @@
       </div>
   </div>
   <img src="img/icons/side-ornament.svg" alt="" class="tabs-side-ornament">
-  <hr class="tabs-hr">
+  <hr class="tabs-hr"> -->
 <!-- end of tabs -->
   <!-- Prays -->
-  <div class="about" id="pray-about">Описовий текст</div>
+  <!-- <div class="about" id="pray-about">Описовий текст</div>
   <h4 class="pray-title">Молитви</h4>
   <img src="img/icons/vertical-line.svg" alt="" class="vertical-line">
  
-  <!-- <div class="prays-container">
+  <div class="prays-container">
        <hr class="pray-line">
-
-
-    <div class="pray-name">
-        <div class="pray-name-right">
-        <span class="plus-icon">+</span>
-        <h4 class="pray-name-title">Акафіст до Богородиці Погінської</h4>
+       <div id="dropdown-1" class="dropdown dropdown-processed">
+        <div class="dropdown-link">
+            <div class="dropdown-link-right">
+              <p class="option-plus">+</p>
+            <h4 class="option-name">Акафіст до Богородиці Погінської</h4>  
+            </div>
+            
+            <img src="img/icons/side-ornament.svg" alt="">
         </div>
-        <img src="img/icons/ornament-right.svg" alt="" class="pray-ornament">
-    </div>
-<div class="pray-content">
-<div class="pray-content-text">
-   <p class="pray-content-pray1">  Царице Покутського краю, прославлена небесними силами і возвеличена людськими родами Мати Ісуса Христа і наша Мати.</p>
-   <p class="pray-content-pray2"> З серцем, повним пошани, припадаю до Тебе, Преблагословенна і Пречиста Діво Маріє, прошу Тебе: вислухай мене нині.</p>
-   <p class="pray-content-pray3">  Прекрасна квітко душевного раю, знаю, що багатьма думками не раз тяжко зневажав доброту Божу, тому прошу Тебе, відкрий мої очі, засліплені марнотами цього світу, а за провини усі - пробач.</p>
-   <p class="pray-content-pray4">  Подай Свою ласкаву материнську руку у теперішній потребі і наповни моє серце силою любові, щоб я не захитався у вірі.
-    Не випускай мене зі Своєї святої опіки і охороняй мене, щоб я ніколи не зійшов з чесної дороги.</p>
-   <p class="pray-content-pray5"> Матінко Божа, прийми ласкаво в Свою опіку мою родину, яку Тобі поручаю.</p>
-   <p class="pray-content-pray6"> Покрий нас Своїм омофором, аби ми всі перебували в здоров'ї і спокої та славили Тебе на віки вічні. Амінь.</p>
-   <img src="img/icon-full.png" alt="" class="icon-pray">
+        <div class="dropdown-container" >
+         <img src="img/icon-full.png" alt="" class="dropdown-img">
+         <div class="dropdown-pray-container">
+             <div class="dropdown-text">
+                 <p class="dropdown-text-item">  Царице Покутського краю, прославлена небесними силами і возвеличена людськими родами Мати Ісуса Христа і наша Мати.</p>
+                 <p class="dropdown-text-item">  З серцем, повним пошани, припадаю до Тебе, Преблагословенна і Пречиста Діво Маріє, прошу Тебе: вислухай мене нині.</p>
+                 <p class="dropdown-text-item"> Прекрасна квітко душевного раю, знаю, що багатьма думками не раз тяжко зневажав доброту Божу, тому прошу Тебе, відкрий мої очі, засліплені марнотами цього світу, а за провини усі - пробач.</p>
+                 <p class="dropdown-text-item"> Подай Свою ласкаву материнську руку у теперішній потребі і наповни моє серце силою любові, щоб я не захитався у вірі.
+                    Не випускай мене зі Своєї святої опіки і охороняй мене, щоб я ніколи не зійшов з чесної дороги.</p>
+                 <p class="dropdown-text-item">  Матінко Божа, прийми ласкаво в Свою опіку мою родину, яку Тобі поручаю.</p>
+                 <p class="dropdown-text-item">  Покрий нас Своїм омофором, аби ми всі перебували в здоров'ї і спокої та славили Тебе на віки вічні. Амінь.</p>
+
+             </div>
+         </div>
+        </div>
+      </div>
+      
+      <div id="dropdown-2" class="dropdown dropdown-processed">
+        <hr class="pray-line">
+        <div class="dropdown-link">
+            <div class="dropdown-link-right">
+              <p class="option-plus">+</p>
+            <h4 class="option-name">Дев’ятниця до Богородиці Погінської</h4>  
+            </div>
+            
+            <img src="img/icons/side-ornament.svg" alt="">
+        </div>
+        <div class="dropdown-container" style="display: none;">
+            <img src="img/icon-full.png" alt="" class="dropdown-img">
+            <div class="dropdown-pray-container">
+                <div class="dropdown-text">
+                    <p class="dropdown-text-item">  Царице Покутського краю, прославлена небесними силами і возвеличена людськими родами Мати Ісуса Христа і наша Мати.</p>
+                    <p class="dropdown-text-item">  З серцем, повним пошани, припадаю до Тебе, Преблагословенна і Пречиста Діво Маріє, прошу Тебе: вислухай мене нині.</p>
+                    <p class="dropdown-text-item"> Прекрасна квітко душевного раю, знаю, що багатьма думками не раз тяжко зневажав доброту Божу, тому прошу Тебе, відкрий мої очі, засліплені марнотами цього світу, а за провини усі - пробач.</p>
+                    <p class="dropdown-text-item"> Подай Свою ласкаву материнську руку у теперішній потребі і наповни моє серце силою любові, щоб я не захитався у вірі.
+                       Не випускай мене зі Своєї святої опіки і охороняй мене, щоб я ніколи не зійшов з чесної дороги.</p>
+                    <p class="dropdown-text-item">  Матінко Божа, прийми ласкаво в Свою опіку мою родину, яку Тобі поручаю.</p>
+                    <p class="dropdown-text-item">  Покрий нас Своїм омофором, аби ми всі перебували в здоров'ї і спокої та славили Тебе на віки вічні. Амінь.</p>
+   
+                </div>
+            </div>
+            
+        </div>
+      </div>
+      
+      <div id="dropdown-3" class="dropdown dropdown-processed">
+        <hr class="pray-line">
+        <div class="dropdown-link">
+            <div class="dropdown-link-right">
+              <p class="option-plus">+</p>
+            <h4 class="option-name">Молебінь до Матері Божої з Погоні</h4>  
+            </div>
+            
+            <img src="img/icons/side-ornament.svg" alt="">
+        </div>
+        <div class="dropdown-container" style="display: none;">
+            <img src="img/icon-full.png" alt="" class="dropdown-img">
+            <div class="dropdown-pray-container">
+                <div class="dropdown-text">
+                    <p class="dropdown-text-item">  Царице Покутського краю, прославлена небесними силами і возвеличена людськими родами Мати Ісуса Христа і наша Мати.</p>
+                    <p class="dropdown-text-item">  З серцем, повним пошани, припадаю до Тебе, Преблагословенна і Пречиста Діво Маріє, прошу Тебе: вислухай мене нині.</p>
+                    <p class="dropdown-text-item"> Прекрасна квітко душевного раю, знаю, що багатьма думками не раз тяжко зневажав доброту Божу, тому прошу Тебе, відкрий мої очі, засліплені марнотами цього світу, а за провини усі - пробач.</p>
+                    <p class="dropdown-text-item"> Подай Свою ласкаву материнську руку у теперішній потребі і наповни моє серце силою любові, щоб я не захитався у вірі.
+                       Не випускай мене зі Своєї святої опіки і охороняй мене, щоб я ніколи не зійшов з чесної дороги.</p>
+                    <p class="dropdown-text-item">  Матінко Божа, прийми ласкаво в Свою опіку мою родину, яку Тобі поручаю.</p>
+                    <p class="dropdown-text-item">  Покрий нас Своїм омофором, аби ми всі перебували в здоров'ї і спокої та славили Тебе на віки вічні. Амінь.</p>
+   
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div id="dropdown-4" class="dropdown dropdown-processed">
+        <hr class="pray-line">
+        <div class="dropdown-link">
+            <div class="dropdown-link-right">
+              <p class="option-plus">+</p>
+            <h4 class="option-name">Вервиця до Погінської Матері Божої</h4>  
+            </div>
+            
+            <img src="img/icons/side-ornament.svg" alt="">
+        </div>
+        <div class="dropdown-container" style="display: none;">
+            <img src="img/icon-full.png" alt="" class="dropdown-img">
+            <div class="dropdown-pray-container">
+                <div class="dropdown-text">
+                    <p class="dropdown-text-item">  Царице Покутського краю, прославлена небесними силами і возвеличена людськими родами Мати Ісуса Христа і наша Мати.</p>
+                    <p class="dropdown-text-item">  З серцем, повним пошани, припадаю до Тебе, Преблагословенна і Пречиста Діво Маріє, прошу Тебе: вислухай мене нині.</p>
+                    <p class="dropdown-text-item"> Прекрасна квітко душевного раю, знаю, що багатьма думками не раз тяжко зневажав доброту Божу, тому прошу Тебе, відкрий мої очі, засліплені марнотами цього світу, а за провини усі - пробач.</p>
+                    <p class="dropdown-text-item"> Подай Свою ласкаву материнську руку у теперішній потребі і наповни моє серце силою любові, щоб я не захитався у вірі.
+                       Не випускай мене зі Своєї святої опіки і охороняй мене, щоб я ніколи не зійшов з чесної дороги.</p>
+                    <p class="dropdown-text-item">  Матінко Божа, прийми ласкаво в Свою опіку мою родину, яку Тобі поручаю.</p>
+                    <p class="dropdown-text-item">  Покрий нас Своїм омофором, аби ми всі перебували в здоров'ї і спокої та славили Тебе на віки вічні. Амінь.</p>
+   
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div id="dropdown-5" class="dropdown dropdown-processed">
+        <hr class="pray-line">
+        <div class="dropdown-link">
+            <div class="dropdown-link-right">
+              <p class="option-plus">+</p>
+            <h4 class="option-name">Молитва до ікони Погінської Богородиці</h4>  
+            </div>
+            
+            <img src="img/icons/side-ornament.svg" alt="">
+        </div>
+        <div class="dropdown-container" style="display: none;">
+            <img src="img/icon-full.png" alt="" class="dropdown-img">
+            <div class="dropdown-pray-container">
+                <div class="dropdown-text">
+                    <p class="dropdown-text-item">  Царице Покутського краю, прославлена небесними силами і возвеличена людськими родами Мати Ісуса Христа і наша Мати.</p>
+                    <p class="dropdown-text-item">  З серцем, повним пошани, припадаю до Тебе, Преблагословенна і Пречиста Діво Маріє, прошу Тебе: вислухай мене нині.</p>
+                    <p class="dropdown-text-item"> Прекрасна квітко душевного раю, знаю, що багатьма думками не раз тяжко зневажав доброту Божу, тому прошу Тебе, відкрий мої очі, засліплені марнотами цього світу, а за провини усі - пробач.</p>
+                    <p class="dropdown-text-item"> Подай Свою ласкаву материнську руку у теперішній потребі і наповни моє серце силою любові, щоб я не захитався у вірі.
+                       Не випускай мене зі Своєї святої опіки і охороняй мене, щоб я ніколи не зійшов з чесної дороги.</p>
+                    <p class="dropdown-text-item">  Матінко Божа, прийми ласкаво в Свою опіку мою родину, яку Тобі поручаю.</p>
+                    <p class="dropdown-text-item">  Покрий нас Своїм омофором, аби ми всі перебували в здоров'ї і спокої та славили Тебе на віки вічні. Амінь.</p>
+   
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div id="dropdown-6" class="dropdown dropdown-processed">
+          <hr class="pray-line">
+        <div class="dropdown-link">
+            <div class="dropdown-link-right">
+              <p class="option-plus">+</p>
+            <h4 class="option-name">Хресна дорога в Погоні</h4>  
+            </div>
+            
+            <img src="img/icons/side-ornament.svg" alt="">
+        </div>
+        <div class="dropdown-container" style="display: none;">
+            <img src="img/icon-full.png" alt="" class="dropdown-img">
+            <div class="dropdown-pray-container">
+                <div class="dropdown-text">
+                    <p class="dropdown-text-item">  Царице Покутського краю, прославлена небесними силами і возвеличена людськими родами Мати Ісуса Христа і наша Мати.</p>
+                    <p class="dropdown-text-item">  З серцем, повним пошани, припадаю до Тебе, Преблагословенна і Пречиста Діво Маріє, прошу Тебе: вислухай мене нині.</p>
+                    <p class="dropdown-text-item"> Прекрасна квітко душевного раю, знаю, що багатьма думками не раз тяжко зневажав доброту Божу, тому прошу Тебе, відкрий мої очі, засліплені марнотами цього світу, а за провини усі - пробач.</p>
+                    <p class="dropdown-text-item"> Подай Свою ласкаву материнську руку у теперішній потребі і наповни моє серце силою любові, щоб я не захитався у вірі.
+                       Не випускай мене зі Своєї святої опіки і охороняй мене, щоб я ніколи не зійшов з чесної дороги.</p>
+                    <p class="dropdown-text-item">  Матінко Божа, прийми ласкаво в Свою опіку мою родину, яку Тобі поручаю.</p>
+                    <p class="dropdown-text-item">  Покрий нас Своїм омофором, аби ми всі перебували в здоров'ї і спокої та славили Тебе на віки вічні. Амінь.</p>
+   
+                </div>
+            </div>
+        </div>
+      </div>
 </div>
-</div>
-
-<div class="pray-name2">
-    <div class="pray-name2-right">
-        
-    </div>
-</div>
- -->
+  </div> -->
 
 
-
-
-
-  </div>
   <!-- end prays -->
 
   <!-- свідчення -->
-  <div class="svidchenya">
+  <!-- <div class="svidchenya">
     <div class="about" id="people-stories">Історії прихожан</div>
       <h4 class="svidchenya-title">Свідчення</h4>
       <div class="svidchenya-container">
@@ -406,7 +561,7 @@
             <button class="svidchenya-item-button">Читати</button> 
           </div>
       </div>
-  </div>
+  </div> -->
   <!-- /свідчення -->
   
 
