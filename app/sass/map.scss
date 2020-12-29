@@ -1,42 +1,85 @@
+.map-container{
+  width: 100%;
+  max-width: 1472px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 40px auto;
+}
+.map-container-info{
+  background: #272626;
+  position: absolute;
+  max-width: 446px;
+top: 40px;
+}
+.mapcontent-text{
+  padding: 60px 54px 100px 54px;
+  .map-contact{
+    font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 400;
+  }
+  .map-content-line{
+    width: 54px;
+    background: transparent;
+ 
+    border: 1px solid #C19332;
+    float: right;
+  }
+ 
+  .map-content-location{
+    display: flex;
+  }
+}
+.map-container-location{
+  margin-left: 258px;
+}
+.map-loc-container{
+  margin-top: 48px;
+}
+.open-maps{
+  position: absolute;
+  right: 80px;
+  bottom: 40px;
+  border: none;
+  background: transparent;
+  border: 1px solid #C19332;
+  padding: 11px 33px;
+  line-height: 24px;
+  border-radius: 40px;
+  font-weight: bold;
+font-size: 15px;
+color:#C19332;
+}
+.map-photo{
+  position: absolute;
+  right: 60px;
+  background-color: #fff;
+  top: 40px;
+}
+.map-photo-item{
+  padding: 10px;
+ 
+}
+.map{
+  width: 100%;
+  max-width: 1173px;
+}
 
-// .map-container{
-//     width: 100%;
-//     max-width: 1541px;
-//     margin: 40px auto;
-//     background-image: url(../img/map.png);
-//     background-size: contain;
-//     background-position: top right;
-//     background-repeat: no-repeat;
-//     .mapcontent-text{
-//         max-width: 446px;
-//         background-color: #272626;
-//         padding-right: 57px;
-//     }
-//     .map-contact{
-//         font-size: 16px;
-//         line-height: 30px;
-//         letter-spacing: 0.2em;
-//         text-transform: uppercase;
-//         color: #FFFFFF;
-//         padding-top: 40px;
-//         padding-left: 54px;
-//         font-weight: normal; 
-//     }
-//     .map-content-line{
-//         width: 54px;
-//          border: 1px solid #C19332;
-//          float: right;
-//           }
-//           .map-content-location{
-//             display: flex;
-//             padding-left: 54px;
-//             padding-top: 48px;
-//               }
-//               .map-content-location:last-child{
-//                   padding-bottom: 158px;
-//               }
-    
-// }
+.map-location-text{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 15px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.location-icon{
+  padding: 22px;
+}
 
 
 .bus-schedule{
@@ -112,4 +155,11 @@
           padding: 0 15px;
       }
     }
-}
+  }
+
+  @media(max-width: 1330px){
+    .map{
+      min-height: 530px;
+    }
+   
+  }

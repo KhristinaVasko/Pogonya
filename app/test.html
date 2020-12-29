@@ -82,23 +82,17 @@
       </div>
 
       <script>
-          $(document).ready(function(){
 
-$('div.dropdown').each(function() {
-  var $dropdown = $(this);
+function chngimg() {
+    var img = document.getElementById('imgplus').src;
+    if (img.src.indexOf('img/icons/hamburger.svg')!=-1) {
+        document.getElementById('imgplus').src  = 'img/icons/close.svg';
+    }
+     else {
+       document.getElementById('imgplus').src = 'img/icons/hamburger.svg';
+   }
 
-  $("div.dropdown-link", $dropdown).click(function(e) {
-    e.preventDefault();
-    $div = $("div.dropdown-container", $dropdown);
-    $div.toggle();
-    $("div.dropdown-container").not($div).hide();
-    return false;
-  });
-}); 
-$('html').click(function(){
-  $("div.dropdown-container").hide();
-}); 
-});
+}
       </script>
 </body>
 </html>
