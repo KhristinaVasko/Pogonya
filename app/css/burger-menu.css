@@ -9,9 +9,6 @@
     margin-left: 50px;
     margin-top: 33px; }
 
-#small-online {
-  display: none; }
-
 .overlay1 {
   display: none; }
 
@@ -22,6 +19,10 @@
 
 .burger-online {
   margin-right: 10px; }
+
+#map-burg-btn {
+  display: block;
+  margin: 0 auto; }
 
 .closebtn {
   display: none;
@@ -52,7 +53,7 @@
     padding: 18px 20.5px; } }
 
 @media (max-width: 540px) {
-  .main-header-left .main-header-left-donation, .main-header-left .main-header-left-online {
+  .main-header-left .main-header-left-online {
     display: none; }
   #small-online {
     display: block;

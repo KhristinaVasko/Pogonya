@@ -67,7 +67,7 @@ body {
     list-style: none;
     display: flex; }
     .header-right .home-navigation .home-navigation-item {
-      font-weight: 600;
+      font-weight: 400;
       font-size: 15px;
       line-height: 48px;
       cursor: pointer;
@@ -95,6 +95,8 @@ body {
     border: none;
     text-align: center;
     border: 1px solid #C19332; }
+  .header-left .header-button-online span {
+    margin-top: 10px; }
   .header-left .header-button-online span img {
     margin-right: 10px; }
   .header-left .donation {
@@ -140,6 +142,7 @@ body {
 
 .gallery-top {
   height: 90%;
+  position: relative;
   width: 100%; }
 
 .gallery-thumbs {
@@ -202,9 +205,29 @@ body {
     z-index: 30;
     left: 536px; }
 
+.block2-line-top {
+  position: absolute;
+  top: 0;
+  left: 940px; }
+
+.block2-line-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 940px; }
+
 .history-right {
   max-width: 1248px;
+  overflow: visible;
+  position: relative;
   background: #272626; }
+  .history-right .line-center {
+    position: absolute;
+    top: -10px;
+    right: 830px; }
+  .history-right .line-center-bottom {
+    position: absolute;
+    right: 830px;
+    bottom: -20px; }
   .history-right .history-right-container {
     background-image: url(../img/icons/history-ornament.svg);
     margin-left: 340px;
@@ -1034,7 +1057,7 @@ header {
   position: absolute;
   z-index: 100;
   overflow-x: hidden;
-  height: 100vh;
+  height: 100%;
   transition: 0.5s;
   background-color: #fff; }
 
@@ -1317,6 +1340,7 @@ header {
 .map-container-info {
   background: #272626;
   position: absolute;
+  z-index: 100;
   max-width: 446px;
   top: 40px; }
 
@@ -1338,7 +1362,8 @@ header {
     display: flex; }
 
 .map-container-location {
-  margin-left: 258px; }
+  margin-left: 258px;
+  position: relative; }
 
 .map-loc-container {
   margin-top: 48px; }
@@ -1346,6 +1371,7 @@ header {
 .open-maps {
   position: absolute;
   right: 80px;
+  outline: none;
   bottom: 40px;
   border: none;
   background: transparent;
@@ -1369,6 +1395,11 @@ header {
 .map {
   width: 100%;
   max-width: 1173px; }
+
+.map-location {
+  position: absolute;
+  top: 50%;
+  right: 46%; }
 
 .map-location-text {
   font-weight: 600;
@@ -1440,9 +1471,62 @@ header {
     .bus-schedule .bus-schedule-container .bus-right-item-img {
       padding: 0 15px; }
 
+@media (max-width: 1421px) {
+  .bus-schedule .bus-schedule-container .bus-schedule-right-items:nth-child(3) {
+    padding: 40px 144px 86px 36px; }
+  .bus-schedule .bus-schedule-container .bus-schedule-right-items:nth-child(2) {
+    padding: 40px 146px 86px 36px; } }
+
+@media (max-width: 1199px) {
+  .map-container-location {
+    margin-left: 96px; } }
+
+@media (max-width: 1498px) {
+  .bus-schedule .bus-schedule-container .bus-schedule-left {
+    margin-right: 109px;
+    margin-left: 20px; } }
+
 @media (max-width: 1330px) {
   .map {
     min-height: 530px; } }
+
+@media (max-width: 1042px) {
+  .bus-schedule .bus-schedule-container .bus-schedule-right-items:first-child {
+    padding: 40px 110px 39px 36px; }
+  .bus-schedule .bus-schedule-container .bus-schedule-right-items:nth-child(2) {
+    padding: 40px 139px 86px 36px; } }
+
+@media (max-width: 1010px) {
+  .bus-schedule .bus-schedule-container .bus-schedule-right-items:first-child {
+    padding: 40px 105px 39px 36px; }
+  .bus-schedule .bus-schedule-container .bus-schedule-right-items:nth-child(3) {
+    padding: 40px 139px 86px 36px; } }
+
+@media (max-width: 942px) {
+  .map-container-info {
+    display: none; }
+  .map-container-location {
+    width: 100%;
+    margin-left: 1px; }
+  .map {
+    height: auto;
+    object-fit: cover; } }
+
+@media (max-width: 741px) {
+  .bus-schedule .bus-schedule-container {
+    flex-direction: column; }
+  .bus-schedule .bus-schedule-container .bus-schedule-left {
+    margin-bottom: 20px; } }
+
+@media (max-width: 342px) {
+  .bus-schedule .bus-schedule-container .bus-schedule-right-items:first-child {
+    padding: 40px 76px 39px 36px; }
+  .bus-schedule .bus-schedule-container .bus-schedule-right-items:nth-child(2) {
+    padding: 40px 111px 86px 36px; }
+  .bus-schedule .bus-schedule-container .bus-schedule-right-items:nth-child(3) {
+    padding: 40px 111px 86px 36px; }
+  .bus-schedule .bus-schedule-container .bus-schedule-right-items:nth-child(4) {
+    padding: 40px 95px 40px 36px; } }
 
 #burg-icon {
   display: none; }
@@ -1455,9 +1539,6 @@ header {
     margin-left: 50px;
     margin-top: 33px; }
 
-#small-online {
-  display: none; }
-
 .overlay1 {
   display: none; }
 
@@ -1468,6 +1549,10 @@ header {
 
 .burger-online {
   margin-right: 10px; }
+
+#map-burg-btn {
+  display: block;
+  margin: 0 auto; }
 
 .closebtn {
   display: none;
@@ -1498,7 +1583,7 @@ header {
     padding: 18px 20.5px; } }
 
 @media (max-width: 540px) {
-  .main-header-left .main-header-left-donation, .main-header-left .main-header-left-online {
+  .main-header-left .main-header-left-online {
     display: none; }
   #small-online {
     display: block;

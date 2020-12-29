@@ -67,7 +67,7 @@ body {
     list-style: none;
     display: flex; }
     .header-right .home-navigation .home-navigation-item {
-      font-weight: 600;
+      font-weight: 400;
       font-size: 15px;
       line-height: 48px;
       cursor: pointer;
@@ -95,6 +95,8 @@ body {
     border: none;
     text-align: center;
     border: 1px solid #C19332; }
+  .header-left .header-button-online span {
+    margin-top: 10px; }
   .header-left .header-button-online span img {
     margin-right: 10px; }
   .header-left .donation {
@@ -140,6 +142,7 @@ body {
 
 .gallery-top {
   height: 90%;
+  position: relative;
   width: 100%; }
 
 .gallery-thumbs {
@@ -202,9 +205,29 @@ body {
     z-index: 30;
     left: 536px; }
 
+.block2-line-top {
+  position: absolute;
+  top: 0;
+  left: 940px; }
+
+.block2-line-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 940px; }
+
 .history-right {
   max-width: 1248px;
+  overflow: visible;
+  position: relative;
   background: #272626; }
+  .history-right .line-center {
+    position: absolute;
+    top: -10px;
+    right: 830px; }
+  .history-right .line-center-bottom {
+    position: absolute;
+    right: 830px;
+    bottom: -20px; }
   .history-right .history-right-container {
     background-image: url(../img/icons/history-ornament.svg);
     margin-left: 340px;

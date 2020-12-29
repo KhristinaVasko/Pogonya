@@ -42,6 +42,10 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
     loopedSlides: 5, 
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
+    scrollbar: {
+      el:'.swiper-scrollbar',
+      draggable: true,
+    }
   });
   var galleryTop = new Swiper('.gallery-top', {
     spaceBetween: 10,
@@ -54,10 +58,10 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
     thumbs: {
       swiper: galleryThumbs,
     },
-    scrollbar: {
-      el:'.swiper-scrollbar',
-      draggable: true,
-    }
+    // scrollbar: {
+    //   el:'.swiper-scrollbar',
+    //   draggable: true,
+    // }
   });
 
   function openNav() {
