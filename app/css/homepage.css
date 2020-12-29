@@ -702,6 +702,11 @@ body {
     color: #DBA059;
     border-radius: 40px; }
 
+.tab-ornament-content {
+  background-image: url(../img/icons/bg-orn-right.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom 90%; }
+
 footer {
   margin-top: 30px;
   background-color: #272626; }
